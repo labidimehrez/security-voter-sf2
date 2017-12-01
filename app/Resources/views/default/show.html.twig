@@ -1,0 +1,4 @@
+   {%for  sujet in sujet|slice(0, 5)%}
+     {{sujet.contenu}}   son utilisateur est {{sujet.user.username}} </br>
+  
+  {% endfor %}

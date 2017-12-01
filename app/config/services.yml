@@ -1,0 +1,9 @@
+# Learn more about services, parameters and containers at
+# https://symfony.com/doc/current/service_container.html
+parameters:
+services:
+    owner_voter:
+        class: AppBundle\Security\OwnerVoter
+        public: false
+        tags:
+          - { name: security.voter }
